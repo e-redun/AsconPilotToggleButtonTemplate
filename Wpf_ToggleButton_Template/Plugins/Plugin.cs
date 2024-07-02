@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using Wpf_ToggleButton_Template.Views;
 
 namespace Wpf_ToggleButton_Template
 {
@@ -17,11 +18,16 @@ namespace Wpf_ToggleButton_Template
         [ImportingConstructor]
         public Plugin()
         {
-            MessageBox.Show("Plugin call");
+
+            //MessageBox.Show("Plugin call");
         }
 
         public void Build(IMenuBuilder builder, ObjectsViewContext context)
         {
+            var toggleView = new ToggleView();
+            
+            toggleView.ShowDialog();
+
             //MessageBox.Show("Build call");
 
         }
