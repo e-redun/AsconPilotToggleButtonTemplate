@@ -6,11 +6,9 @@
                             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
                             mc:Ignorable="d" 
                             d:DesignHeight="300" d:DesignWidth="300"
-                            SizeToContent="Height"
-                            ResizeMode="NoResize"
                             WindowStartupLocation="CenterOwner"
-                            Width="500"
-                            Height="500"
+                            Width="400"
+                            Height="300"
                             >
 
     <themeControls:DialogWindow.Resources>
@@ -21,38 +19,74 @@
         </ResourceDictionary>
     </themeControls:DialogWindow.Resources>
 
-
-    <!--<Grid >
+    <Grid >
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-    </Grid>-->
-1
-        <!--<ToggleButton Content="Pilot ToggleButton"/>
 
-        <ToggleButton Grid.Row="1"
-                      >
-                      Style="{StaticResource MyToggleButton}"
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <!--Row 0-->
+        <TextBlock Grid.Row="0" Grid.Column="1"
+                   Text="Content"
+                   FontSize="16"
+                   />
+
+        <TextBlock Grid.Row="0" Grid.Column="2"
+                   Text="Шаблон"
+                   FontSize="16"
+                   />
+        
+        <!--Row 1-->
+        <ToggleButton Grid.Row="1" Grid.Column="0"
+                      Content="Простой текст"
+                      />
+
+        <TextBlock Grid.Row="1" Grid.Column="1"
+                   Text="Простой текст"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="2"
+                   Text="Штатный"/>
+        <!--Row 2-->
+
+        <ToggleButton Grid.Row="2">
             <ToggleButton.Content>
                 <StackPanel Orientation="Vertical">
-                    <TextBlock Text="Text1"/>
-                    <TextBlock Text="Text2"/>
+                    <TextBlock Text="Составной "/>
+                    <TextBlock Text="текст"/>
                 </StackPanel>
             </ToggleButton.Content>
         </ToggleButton>
 
-        <ToggleButton Content="Standard ToggleButton"
-                      Grid.Row="2"
+        <TextBlock Grid.Row="2" Grid.Column="1"
+                   Text="Составной текст"/>
+
+        <TextBlock Grid.Row="2" Grid.Column="2"
+                   Text="Штатный"/>
+        <!--Row 3-->
+        <ToggleButton Grid.Row="3"
+                      Style="{StaticResource MyToggleButton}"
                       >
-                      --><!--Style="{StaticResource ToggleButton}"--><!--
-            
+        <ToggleButton.Content>
+            <StackPanel Orientation="Vertical">
+                 <TextBlock Text="Составной "/>
+                 <TextBlock Text="текст"/>
+            </StackPanel>
+        </ToggleButton.Content>
         </ToggleButton>
 
-        <ContentPresenter Content="asdasd"
-                          Grid.Row="3"
-                          Visibility="Collapsed"/>-->
+        <TextBlock Grid.Row="3" Grid.Column="1"
+                   Text="Составной текст"/>
+        
+        <TextBlock Grid.Row="3" Grid.Column="2"
+                   Text="Исправленный"/>
 
+    </Grid>
 </themeControls:DialogWindow>

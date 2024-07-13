@@ -15,7 +15,8 @@
         <ResourceDictionary Source="/Ascon.Pilot.Theme;component/themes/standardcontrols.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 
-    <Style TargetType="ToggleButton"
+    <Style x:Key="MyToggleButton"
+           TargetType="ToggleButton"
            BasedOn="{StaticResource {x:Type ToggleButton}}"
            >
         <Setter Property="Template">
@@ -31,6 +32,12 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
+    </Style>
+
+    <Style TargetType="TextBlock"
+           BasedOn="{StaticResource DefaultTextBlockStyle}">
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
     </Style>
 
 </ResourceDictionary>
