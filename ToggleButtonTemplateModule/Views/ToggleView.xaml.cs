@@ -1,4 +1,4 @@
-﻿namespace Wpf_ToggleButton_Template.Views
+﻿namespace ToggleButtonTemplate.Views
 {
     public partial class ToggleView
     {

@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{E046C67F-C36B-46CE-BF33-D23BF905A97A}</ProjectGuid>
     <OutputType>library</OutputType>
-    <RootNamespace>Wpf_ToggleButton_Template</RootNamespace>
-    <AssemblyName>Wpf_ToggleButton_Template.ext2</AssemblyName>
+    <RootNamespace>ToggleButtonTemplate</RootNamespace>
+    <AssemblyName>ToggleButtonTemplateModule.ext2</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -63,7 +63,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="Plugins\Plugin.cs" />
+    <Compile Include="Plugins\MainMenuPlugin.cs" />
     <Compile Include="Views\ToggleView.xaml.cs">
       <DependentUpon>ToggleView.xaml</DependentUpon>
       <SubType>Code</SubType>
